@@ -1,0 +1,22 @@
+
+@extends('c_invoices.layout')
+@section('content')
+
+<div class="card" style="margin:20px;">
+  <div class="card-header">Customer invoices Page</div>
+  <div class="card-body">
+        <div class="card-body">
+        <h5 class="card-title">invoice number : {{ $c_invoice->invoice_number }}</h5>
+        <h5 class="card-title">invoice_date : {{ $c_invoice->invoice_date }}</h5>
+        <h5 class="card-title">recive_receipt_no : {{ $c_invoice->recive_receipt_no }}</h5>
+        <h5 class="card-title">customer_id : {{ $c_invoice->customer_id }}</h5>
+        <h5 class="card-title">product_id : {{ $c_invoice->product_id }}</h5>
+        <h5 class="card-title">quantity : {{ $c_invoice->quantity }}</h5>
+        <h5 class="card-title">vat : {{ $c_invoice->vat }}</h5>
+        <h5 class="card-title">discount : {{ $c_invoice->discount }}</h5>
+        <h5 class="card-title">supplier_id : {{ $c_invoice->supplier_id }}</h5>
+
+  </div>
+    </hr>
+  </div>
+</div>
